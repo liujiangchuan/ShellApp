@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ShellApp"
 include(":app")
+include(":FeaturedSport")
