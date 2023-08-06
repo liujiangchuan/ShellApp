@@ -75,7 +75,7 @@ fun TopBar(onRefreshClick: (() -> Unit)) {
         },
         actions = {
             IconButton(onClick = onRefreshClick) {
-                Icon(Icons.Filled.Refresh, contentDescription = null)
+                Icon(Icons.Filled.Refresh, contentDescription = "Refresh")
             }
         },
         colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)

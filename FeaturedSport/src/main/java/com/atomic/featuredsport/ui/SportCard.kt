@@ -6,6 +6,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -18,11 +19,13 @@ fun SportCard(sportCardUiState: SportCardUiState, modifier: Modifier = Modifier)
                 Text(
                     text = sportCardUiState.name,
                     style = MaterialTheme.typography.headlineSmall,
-                    modifier = modifier.padding(top = 4.dp, bottom = 24.dp)
+                    modifier = modifier
+                        .padding(top = 4.dp, bottom = 24.dp)
+                        .testTag("SportCardName")
                 )
                 Text(
                     text = sportCardUiState.description,
-                    modifier = modifier
+                    modifier = modifier.testTag("SportCardDescription")
                 )
             }
         }
